@@ -22,6 +22,9 @@ For more details and for information on how to disable error reporting, see.
 [Sentry Plugin Documentation](https://github.com/ioBroker/plugin-sentry#plugin-sentry)! Sentry reports are used starting with js-controller 3.0
 are used.
 
+### Credits
+This adapter would not have been possible without the great work of @xXBJXx (https://github.com/xXBJXx), who created this adapter and will hopefully maintain it again in the future.
+
 ### Description
 This adapter allows you to control [Elgato Key Lights](https://www.elgato.com/de/key-light) via ioBroker.\
 The adapter supports the following functions:
@@ -81,6 +84,10 @@ The data points are divided into:
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
+### **WORK IN PROGRESS**
+* (mcm1957) Adapter has been mved to iobroker-community-adapters area
+* (mcm1957) Dependencies have been updated
+
 ### 0.2.0 (2023-02-26)
 * (xXBJXx) updated dependencies
 * (xXBJXx) Updating the UI to the new functions of the iobroker-react library
@@ -100,6 +107,7 @@ The data points are divided into:
 ## License
 MIT License
 
+Copyright (c) 2024 iobroker-community-adapters <mcm57@gmx.at>
 Copyright (c) 2023 xXBJXx <issi.dev.iobroker@gmail.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
