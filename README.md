@@ -85,7 +85,8 @@ The data points are divided into:
     ### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
-* (mcm1957) Adapter has been mved to iobroker-community-adapters area
+* (mcm1957) Adapter requires node.js 18 or newer now
+* (mcm1957) Adapter has been moved into iobroker-community-adapters area
 * (mcm1957) Dependencies have been updated
 
 ### 0.2.0 (2023-02-26)
