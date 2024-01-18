@@ -1095,7 +1095,7 @@ class ElgatoKeyLight extends utils.Adapter {
 	 * Is called if a subscribed state changes
 	 */
 	private async onStateChange(id: string, state: ioBroker.State | null | undefined): Promise<void> {
-		if (state) {
+		if (state && !state.ack) {
 			if (state.from === 'system.adapter.' + this.namespace) {
 				// ignore the state change from the adapter itself
 				return;
