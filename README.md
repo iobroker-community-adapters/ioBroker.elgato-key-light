@@ -84,7 +84,7 @@ The data points are divided into:
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.0.0 (2024-01-18)
 * (mcm1957) Adapter requires node.js 18 or newer now
 * (mcm1957) Adapter has been moved into iobroker-community-adapters area
 * (mcm1957) Dependencies have been updated

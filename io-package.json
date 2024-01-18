@@ -1,178 +1,191 @@
 {
-	"common": {
-		"name": "elgato-key-light",
-		"version": "0.2.0",
-		"news": {
-			"0.2.0": {
-				"en": "updated dependencies\nUpdating the UI to the new functions of the iobroker-react library",
-				"de": "aktualisierte Abhängigkeiten\nAktualisierung der Benutzeroberfläche auf die neuen Funktionen der iobroker-react-Bibliothek",
-				"ru": "обновленные зависимости\nОбновление пользовательского интерфейса с учетом новых функций библиотеки iobroker-react",
-				"pt": "dependências actualizadas\nActualização da IU para as novas funções da biblioteca iobroker-react",
-				"nl": "bijgewerkte afhankelijkheden\nBijwerken van de UI naar de nieuwe functies van de iobroker-react bibliotheek",
-				"fr": "Mise à jour des dépendances\nMise à jour de l'interface utilisateur vers les nouvelles fonctions de la bibliothèque iobroker-react",
-				"it": "dipendenze aggiornate\nAggiornamento dell'interfaccia utente alle nuove funzioni della libreria iobroker-react",
-				"es": "dependencias actualizadas\nActualización de la interfaz de usuario a las nuevas funciones de la biblioteca iobroker-react",
-				"pl": "zaktualizowane zależności\nAktualizacja UI do nowych funkcji biblioteki iobroker-react",
-				"uk": "оновлені залежності\nОновлення інтерфейсу користувача до нових функцій бібліотеки iobroker-react",
-				"zh-cn": "更新依赖性\n根据iobroker-react库的新功能更新用户界面"
-			},
-			"0.1.0": {
-				"en": "removed the Bonjour search, because it did not work properly\nAdding a delete function for devices\nDependency updates\nfeature request #2 added",
-				"de": "die Bonjour-Suche entfernt, da sie nicht richtig funktionierte\nHinzufügen einer Löschfunktion für Geräte\nAktualisierungen der Abhängigkeiten\nFeature Request #2 hinzugefügt",
-				"ru": "удален поиск Bonjour, поскольку он не работал должным образом\nДобавление функции удаления для устройств\nОбновления зависимостей\nдобавлен запрос функции #2",
-				"pt": "removeu a pesquisa Bonjour, porque não funcionava correctamente\nAcrescentar uma função de apagar para dispositivos\nActualizações de dependências\npedido de característica #2 adicionado",
-				"nl": "de Bonjour-zoekopdracht verwijderd, omdat deze niet goed werkte\nEen verwijderfunctie voor apparaten toegevoegd\nUpdates van afhankelijkheden\nfeature request #2 toegevoegd",
-				"fr": "supprimé la recherche Bonjour, car elle ne fonctionnait pas correctement\nAjout d'une fonction de suppression pour les appareils\nMises à jour des dépendances\ndemande de fonctionnalité #2 ajoutée",
-				"it": "rimosso la ricerca Bonjour, perché non funzionava correttamente\nAggiunta una funzione di eliminazione per i dispositivi\nAggiornamenti delle dipendenze\nrichiesta di funzionalità #2 aggiunta",
-				"es": "eliminado la búsqueda Bonjour, porque no funcionaba correctamente\nAgregando una función de eliminación para dispositivos\nActualizaciones de dependencias\nsolicitud de función #2 agregada",
-				"pl": "usunięto wyszukiwanie Bonjour, ponieważ nie działało poprawnie\nDodawanie funkcji usuwania dla urządzeń\nAktualizacje zależności\nżądanie funkcji #2 dodane",
-				"uk": "видалено пошук Bonjour, оскільки він не працював правильно\nДодавання функції видалення для пристроїв\nОновлення залежностей\nзапит функції #2 додано",
-				"zh-cn": "删除了Bonjour搜索，因为它无法正常工作\n添加用于设备的删除功能\n依赖项更新\n功能请求#2已添加"
-			},
-			"0.0.3": {
-				"en": "changed all images to png",
-				"de": "alle Bilder in png geändert",
-				"ru": "изменил все изображения на png",
-				"pt": "mudou todas as imagens para png",
-				"nl": "alle afbeeldingen veranderd in png",
-				"fr": "changé toutes les images en png",
-				"it": "modificato tutte le immagini in png",
-				"es": "cambiado todas las imágenes a png",
-				"pl": "zmienił wszystkie obrazy na png",
-				"uk": "змінили всі зображення на png",
-				"zh-cn": "将所有图片改为png"
-			},
-			"0.0.2": {
-				"en": "first release",
-				"de": "erste Veröffentlichung",
-				"ru": "первый выпуск",
-				"pt": "primeiro lançamento",
-				"nl": "eerste uitgave",
-				"fr": "première version",
-				"it": "prima uscita",
-				"es": "primer lanzamiento",
-				"pl": "pierwsze wydanie",
-				"uk": "перший реліз",
-				"zh-cn": "首次释放"
-			}
-		},
-		"title": "Elgato Key Light",
-		"titleLang": {
-			"en": "Elgato Key Light",
-			"de": "Elgato Key Light",
-			"ru": "Elgato Key Light",
-			"pt": "Elgato Key Light",
-			"nl": "Elgato Key Light",
-			"fr": "Elgato Key Light",
-			"it": "Elgato Key Light",
-			"es": "Elgato Key Light",
-			"pl": "Elgato Key Light",
-			"uk": "Elgato Key Light",
-			"zh-cn": "Elgato Key Light"
-		},
-		"desc": {
-			"en": "With the Elgato Key Light Adapter you can query and control Elgato lamps like Elgato Key Light / Elgato Key Light Air.",
-			"de": "Mit dem Elgato Key Light Adapter können Sie Elgato-Lampen wie Elgato Key Light / Elgato Key Light Air abfragen und steuern.",
-			"ru": "С помощью адаптера Elgato Key Light Adapter вы можете запрашивать и управлять лампами Elgato, такими как Elgato Key Light / Elgato Key Light Air.",
-			"pt": "Com o Adaptador de luz chave Elgato, pode consultar e controlar lâmpadas Elgato como a Elgato Key Light / Elgato Key Light Air.",
-			"nl": "Met de Elgato Key Light Adapter kunt u Elgato lampen zoals Elgato Key Light / Elgato Key Light Air opvragen en bedienen.",
-			"fr": "L'adaptateur Key Light Elgato permet d'interroger et de contrôler les lampes Elgato telles que Elgato Key Light / Elgato Key Light Air.",
-			"it": "Con l'adattatore Elgato Key Light Adapter è possibile interrogare e controllare le lampade Elgato come Elgato Key Light / Elgato Key Light Air.",
-			"es": "Con el adaptador Elgato Key Light, puedes consultar y controlar lámparas Elgato como Elgato Key Light / Elgato Key Light Air.",
-			"pl": "Dzięki Elgato Key Light Adapter, możesz zapytać i kontrolować lampy Elgato, takie jak Elgato Key Light / Elgato Key Light Air.",
-			"uk": "За допомогою адаптера Elgato Key Light Adapter ви можете запитувати та керувати лампами Elgato, такими як Elgato Key Light / Elgato Key Light Air.",
-			"zh-cn": "使用Elgato钥匙灯适配器，你可以查询和控制Elgato灯具，如Elgato钥匙灯/Elgato钥匙灯空气。"
-		},
-		"authors": [
-			"xXBJXx <issi.dev.iobroker@gmail.com>",
-			"iobroker-community-adapters <mcm57@gmx.at>"
-		  ],
-		"keywords": [
-			"Elgato", 
-			"Light", 
-			"Elgato Key Light"
-		],
-		"license": "MIT",
-		"platform": "Javascript/Node.js",
-		"main": "build/main.js",
-		"icon": "elgato-key-light.png",
-		"enabled": true,
-		"extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.elgato-key-light/main/admin/elgato-key-light.png",
-		"readme": "https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/blob/main/README.md",
-		"loglevel": "info",
-		"mode": "daemon",
-		"type": "lighting",
-		"compact": true,
-		"connectionType": "local",
-		"dataSource": "poll",
-		"materializeTab": true,
-		"messagebox": true,
-		"singleton": true,
-		"stopBeforeUpdate": true,
-		"adminUI": {
-			"config": "none",
-			"tab": "materialize"
-		},
-		"adminTab": {
-			"singleton": true,
-			"name": {
-				"en": "Elgato Key Light",
-				"de": "Elgato Key Light",
-				"ru": "Elgato Key Light",
-				"pt": "Elgato Key Light",
-				"nl": "Elgato Key Light",
-				"fr": "Elgato Key Light",
-				"it": "Elgato Key Light",
-				"es": "Elgato Key Light",
-				"pl": "Elgato Key Light",
-				"uk": "Elgato Key Light",
-				"zh-cn": "Elgato Key Light"
-			},
-			"link": "",
-			"fa-icon": "info"
-		},
-		"eraseOnUpload": true,
-		"dependencies": [
-			{
-				"js-controller": ">=3.3.22"
-			}
-		],
-		"globalDependencies": [
-			{
-				"admin": ">=5.0.0"
-			}
-		]
-	},
-	"plugins": {
-		"sentry": {
-			"dsn": "https://d0446b6ad8a543b586c5597576a8a14e@o384969.ingest.sentry.io/4504545634746368"
-		}
-	},
-	"native": {
-		"interval": 60
-	},
-	"objects": [],
-	"instanceObjects": [
-		{
-			"_id": "info",
-			"type": "channel",
-			"common": {
-				"name": "Information"
-			},
-			"native": {}
-		},
-		{
-			"_id": "info.connection",
-			"type": "state",
-			"common": {
-				"role": "indicator.connected",
-				"name": "Device or service connected",
-				"type": "boolean",
-				"read": true,
-				"write": false,
-				"def": false
-			},
-			"native": {}
-		}
-	]
+  "common": {
+    "name": "elgato-key-light",
+    "version": "1.0.0",
+    "news": {
+      "1.0.0": {
+        "en": "Adapter requires node.js 18 or newer now\nAdapter has been moved into iobroker-community-adapters area\nDependencies have been updated",
+        "de": "Adapter benötigt node.js 18 oder neuer nun\nAdapter wurde in Iobroker-Community-Adapter Bereich verschoben\nAbhängigkeiten wurden aktualisiert",
+        "ru": "Адаптер требует node.js 18 или более новый\nАдаптер был перемещен в зону iobroker-community-adapters\nЗависимость обновлена",
+        "pt": "Adaptador requer node.js 18 ou mais recente agora\nAdapter foi transferido para iobroker-community-adapters area\nAs dependências foram atualizadas",
+        "nl": "Adapter vereist node.js 18 of nieuwer nu\nAdapter is verplaatst naar iobroker-community-adapters gebied\nAfhankelijkheden zijn bijgewerkt",
+        "fr": "Adaptateur nécessite node.js 18 ou plus récent maintenant\nAdaptateur a été déplacé dans la zone iobroker-community-adaptateurs\nLes dépendances ont été actualisées",
+        "it": "L'adattatore richiede node.js 18 o più nuovo ora\nL'adattatore è stato spostato nell'area di hobroker-community-adapters\nLe dipendenze sono state aggiornate",
+        "es": "Adaptador requiere node.js 18 o nuevo ahora\nAdaptador se ha trasladado a la zona de ibroker-community-adapters\nSe han actualizado las dependencias",
+        "pl": "Adapter wymaga node.js 18 lub nowsze teraz\nAdapter został przeniesiony do obszaru adapterów społeczności iobrokerowej\nZaktualizowano zależności",
+        "uk": "Адаптер вимагає node.js 18 або новіший зараз\nПереміщено перехід на область iobroker-community-adapters\nЗалежність було оновлено",
+        "zh-cn": "适配器需要节点.js 18 或 新的现在\n适应器已移入 iobrocco- 社区适应器区域\n依赖关系已更新"
+      },
+      "0.2.0": {
+        "en": "updated dependencies\nUpdating the UI to the new functions of the iobroker-react library",
+        "de": "aktualisierte Abhängigkeiten\nAktualisierung der Benutzeroberfläche auf die neuen Funktionen der iobroker-react-Bibliothek",
+        "ru": "обновленные зависимости\nОбновление пользовательского интерфейса с учетом новых функций библиотеки iobroker-react",
+        "pt": "dependências actualizadas\nActualização da IU para as novas funções da biblioteca iobroker-react",
+        "nl": "bijgewerkte afhankelijkheden\nBijwerken van de UI naar de nieuwe functies van de iobroker-react bibliotheek",
+        "fr": "Mise à jour des dépendances\nMise à jour de l'interface utilisateur vers les nouvelles fonctions de la bibliothèque iobroker-react",
+        "it": "dipendenze aggiornate\nAggiornamento dell'interfaccia utente alle nuove funzioni della libreria iobroker-react",
+        "es": "dependencias actualizadas\nActualización de la interfaz de usuario a las nuevas funciones de la biblioteca iobroker-react",
+        "pl": "zaktualizowane zależności\nAktualizacja UI do nowych funkcji biblioteki iobroker-react",
+        "uk": "оновлені залежності\nОновлення інтерфейсу користувача до нових функцій бібліотеки iobroker-react",
+        "zh-cn": "更新依赖性\n根据iobroker-react库的新功能更新用户界面"
+      },
+      "0.1.0": {
+        "en": "removed the Bonjour search, because it did not work properly\nAdding a delete function for devices\nDependency updates\nfeature request #2 added",
+        "de": "die Bonjour-Suche entfernt, da sie nicht richtig funktionierte\nHinzufügen einer Löschfunktion für Geräte\nAktualisierungen der Abhängigkeiten\nFeature Request #2 hinzugefügt",
+        "ru": "удален поиск Bonjour, поскольку он не работал должным образом\nДобавление функции удаления для устройств\nОбновления зависимостей\nдобавлен запрос функции #2",
+        "pt": "removeu a pesquisa Bonjour, porque não funcionava correctamente\nAcrescentar uma função de apagar para dispositivos\nActualizações de dependências\npedido de característica #2 adicionado",
+        "nl": "de Bonjour-zoekopdracht verwijderd, omdat deze niet goed werkte\nEen verwijderfunctie voor apparaten toegevoegd\nUpdates van afhankelijkheden\nfeature request #2 toegevoegd",
+        "fr": "supprimé la recherche Bonjour, car elle ne fonctionnait pas correctement\nAjout d'une fonction de suppression pour les appareils\nMises à jour des dépendances\ndemande de fonctionnalité #2 ajoutée",
+        "it": "rimosso la ricerca Bonjour, perché non funzionava correttamente\nAggiunta una funzione di eliminazione per i dispositivi\nAggiornamenti delle dipendenze\nrichiesta di funzionalità #2 aggiunta",
+        "es": "eliminado la búsqueda Bonjour, porque no funcionaba correctamente\nAgregando una función de eliminación para dispositivos\nActualizaciones de dependencias\nsolicitud de función #2 agregada",
+        "pl": "usunięto wyszukiwanie Bonjour, ponieważ nie działało poprawnie\nDodawanie funkcji usuwania dla urządzeń\nAktualizacje zależności\nżądanie funkcji #2 dodane",
+        "uk": "видалено пошук Bonjour, оскільки він не працював правильно\nДодавання функції видалення для пристроїв\nОновлення залежностей\nзапит функції #2 додано",
+        "zh-cn": "删除了Bonjour搜索，因为它无法正常工作\n添加用于设备的删除功能\n依赖项更新\n功能请求#2已添加"
+      },
+      "0.0.3": {
+        "en": "changed all images to png",
+        "de": "alle Bilder in png geändert",
+        "ru": "изменил все изображения на png",
+        "pt": "mudou todas as imagens para png",
+        "nl": "alle afbeeldingen veranderd in png",
+        "fr": "changé toutes les images en png",
+        "it": "modificato tutte le immagini in png",
+        "es": "cambiado todas las imágenes a png",
+        "pl": "zmienił wszystkie obrazy na png",
+        "uk": "змінили всі зображення на png",
+        "zh-cn": "将所有图片改为png"
+      },
+      "0.0.2": {
+        "en": "first release",
+        "de": "erste Veröffentlichung",
+        "ru": "первый выпуск",
+        "pt": "primeiro lançamento",
+        "nl": "eerste uitgave",
+        "fr": "première version",
+        "it": "prima uscita",
+        "es": "primer lanzamiento",
+        "pl": "pierwsze wydanie",
+        "uk": "перший реліз",
+        "zh-cn": "首次释放"
+      }
+    },
+    "title": "Elgato Key Light",
+    "titleLang": {
+      "en": "Elgato Key Light",
+      "de": "Elgato Key Light",
+      "ru": "Elgato Key Light",
+      "pt": "Elgato Key Light",
+      "nl": "Elgato Key Light",
+      "fr": "Elgato Key Light",
+      "it": "Elgato Key Light",
+      "es": "Elgato Key Light",
+      "pl": "Elgato Key Light",
+      "uk": "Elgato Key Light",
+      "zh-cn": "Elgato Key Light"
+    },
+    "desc": {
+      "en": "With the Elgato Key Light Adapter you can query and control Elgato lamps like Elgato Key Light / Elgato Key Light Air.",
+      "de": "Mit dem Elgato Key Light Adapter können Sie Elgato-Lampen wie Elgato Key Light / Elgato Key Light Air abfragen und steuern.",
+      "ru": "С помощью адаптера Elgato Key Light Adapter вы можете запрашивать и управлять лампами Elgato, такими как Elgato Key Light / Elgato Key Light Air.",
+      "pt": "Com o Adaptador de luz chave Elgato, pode consultar e controlar lâmpadas Elgato como a Elgato Key Light / Elgato Key Light Air.",
+      "nl": "Met de Elgato Key Light Adapter kunt u Elgato lampen zoals Elgato Key Light / Elgato Key Light Air opvragen en bedienen.",
+      "fr": "L'adaptateur Key Light Elgato permet d'interroger et de contrôler les lampes Elgato telles que Elgato Key Light / Elgato Key Light Air.",
+      "it": "Con l'adattatore Elgato Key Light Adapter è possibile interrogare e controllare le lampade Elgato come Elgato Key Light / Elgato Key Light Air.",
+      "es": "Con el adaptador Elgato Key Light, puedes consultar y controlar lámparas Elgato como Elgato Key Light / Elgato Key Light Air.",
+      "pl": "Dzięki Elgato Key Light Adapter, możesz zapytać i kontrolować lampy Elgato, takie jak Elgato Key Light / Elgato Key Light Air.",
+      "uk": "За допомогою адаптера Elgato Key Light Adapter ви можете запитувати та керувати лампами Elgato, такими як Elgato Key Light / Elgato Key Light Air.",
+      "zh-cn": "使用Elgato钥匙灯适配器，你可以查询和控制Elgato灯具，如Elgato钥匙灯/Elgato钥匙灯空气。"
+    },
+    "authors": [
+      "xXBJXx <issi.dev.iobroker@gmail.com>",
+      "iobroker-community-adapters <mcm57@gmx.at>"
+    ],
+    "keywords": [
+      "Elgato",
+      "Light",
+      "Elgato Key Light"
+    ],
+    "license": "MIT",
+    "platform": "Javascript/Node.js",
+    "main": "build/main.js",
+    "icon": "elgato-key-light.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.elgato-key-light/main/admin/elgato-key-light.png",
+    "readme": "https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/blob/main/README.md",
+    "loglevel": "info",
+    "mode": "daemon",
+    "type": "lighting",
+    "compact": true,
+    "connectionType": "local",
+    "dataSource": "poll",
+    "materializeTab": true,
+    "messagebox": true,
+    "singleton": true,
+    "stopBeforeUpdate": true,
+    "adminUI": {
+      "config": "none",
+      "tab": "materialize"
+    },
+    "adminTab": {
+      "singleton": true,
+      "name": {
+        "en": "Elgato Key Light",
+        "de": "Elgato Key Light",
+        "ru": "Elgato Key Light",
+        "pt": "Elgato Key Light",
+        "nl": "Elgato Key Light",
+        "fr": "Elgato Key Light",
+        "it": "Elgato Key Light",
+        "es": "Elgato Key Light",
+        "pl": "Elgato Key Light",
+        "uk": "Elgato Key Light",
+        "zh-cn": "Elgato Key Light"
+      },
+      "link": "",
+      "fa-icon": "info"
+    },
+    "eraseOnUpload": true,
+    "dependencies": [
+      {
+        "js-controller": ">=3.3.22"
+      }
+    ],
+    "globalDependencies": [
+      {
+        "admin": ">=5.0.0"
+      }
+    ]
+  },
+  "plugins": {
+    "sentry": {
+      "dsn": "https://d0446b6ad8a543b586c5597576a8a14e@o384969.ingest.sentry.io/4504545634746368"
+    }
+  },
+  "native": {
+    "interval": 60
+  },
+  "objects": [],
+  "instanceObjects": [
+    {
+      "_id": "info",
+      "type": "channel",
+      "common": {
+        "name": "Information"
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.connection",
+      "type": "state",
+      "common": {
+        "role": "indicator.connected",
+        "name": "Device or service connected",
+        "type": "boolean",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    }
+  ]
 }
