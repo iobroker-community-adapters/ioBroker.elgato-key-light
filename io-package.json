@@ -83,15 +83,22 @@
 			"uk": "За допомогою адаптера Elgato Key Light Adapter ви можете запитувати та керувати лампами Elgato, такими як Elgato Key Light / Elgato Key Light Air.",
 			"zh-cn": "使用Elgato钥匙灯适配器，你可以查询和控制Elgato灯具，如Elgato钥匙灯/Elgato钥匙灯空气。"
 		},
-		"authors": ["xXBJXx <issi.dev.iobroker@gmail.com>"],
-		"keywords": ["Elgato", "Light", "Elgato Key Light"],
+		"authors": [
+			"xXBJXx <issi.dev.iobroker@gmail.com>",
+			"iobroker-community-adapters <mcm57@gmx.at>"
+		  ],
+		"keywords": [
+			"Elgato", 
+			"Light", 
+			"Elgato Key Light"
+		],
 		"license": "MIT",
 		"platform": "Javascript/Node.js",
 		"main": "build/main.js",
 		"icon": "elgato-key-light.png",
 		"enabled": true,
-		"extIcon": "https://raw.githubusercontent.com/xXBJXx/ioBroker.elgato-key-light/main/admin/elgato-key-light.png",
-		"readme": "https://github.com/xXBJXx/ioBroker.elgato-key-light/blob/main/README.md",
+		"extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.elgato-key-light/main/admin/elgato-key-light.png",
+		"readme": "https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/blob/main/README.md",
 		"loglevel": "info",
 		"mode": "daemon",
 		"type": "lighting",
@@ -118,6 +125,7 @@
 				"it": "Elgato Key Light",
 				"es": "Elgato Key Light",
 				"pl": "Elgato Key Light",
+				"uk": "Elgato Key Light",
 				"zh-cn": "Elgato Key Light"
 			},
 			"link": "",
