@@ -988,7 +988,7 @@ class ElgatoKeyLight extends utils.Adapter {
   }
   async onStateChange(id, state) {
     var _a;
-    if (state) {
+    if (state && !state.ack) {
       if (state.from === "system.adapter." + this.namespace) {
         return;
       } else {

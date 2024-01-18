@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "elgato-key-light",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "news": {
+      "1.0.1": {
+        "en": "Writing states now requires ack flag to be false.\nSmall adaptions to solve review issues have been applied.",
+        "de": "Das Schreiben von Zuständen erfordert jetzt, dass das ack-Flag falsch ist.\nEs wurden kleine Anpassungen gemäß Review-Feedback vorgenommen.",
+        "ru": "Написание состояний теперь требует, чтобы флаг был ложным.\nПрименяются небольшие приспособления для решения вопросов обзора.",
+        "pt": "Escrever estados agora exige que a bandeira da ack seja falsa.\nForam aplicadas pequenas adaptações para resolver problemas de revisão.",
+        "nl": "Schrijven van staten vereist nu ack vlag om vals te zijn.\nEr zijn kleine aanpassingen toegepast om herzieningskwesties op te lossen.",
+        "fr": "L'écriture des états exige maintenant que le drapeau ack soit faux.\nDe petites adaptations pour résoudre les problèmes d'examen ont été appliquées.",
+        "it": "La scrittura degli stati richiede ora che la bandiera del cazzo sia falsa.\nSono state applicate piccole adattazioni per risolvere problemi di revisione.",
+        "es": "Escribir estados ahora requiere que la bandera de la cubierta sea falsa.\nSe han aplicado pequeñas adaptaciones para resolver los problemas de examen.",
+        "pl": "Pisanie stanów wymaga teraz fałszywej flagi.\nZastosowano niewielkie dostosowania w celu rozwiązania problemów związanych z przeglądem.",
+        "uk": "Письмові стани тепер вимагають невірного прапора.\nНаведено незначні адаптації до вирішення питань.",
+        "zh-cn": "写作状态现在要求阿克旗是假的.\n为解决审查问题进行了小规模的调整."
+      },
       "1.0.0": {
         "en": "Adapter requires node.js 18 or newer now\nAdapter has been moved into iobroker-community-adapters area\nDependencies have been updated",
         "de": "Adapter benötigt node.js 18 oder neuer nun\nAdapter wurde in Iobroker-Community-Adapter Bereich verschoben\nAbhängigkeiten wurden aktualisiert",

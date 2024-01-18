@@ -84,7 +84,7 @@ The data points are divided into:
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 1.0.1 (2024-01-18)
 * (mcm1957) Writing states now requires ack flag to be false.
 * (mcm1957) Small adaptions to solve review issues have been applied.
 
@@ -105,9 +105,6 @@ The data points are divided into:
 
 ### 0.0.3 (2023-01-22)
 * (xXBJXx) changed all images to png
-
-### 0.0.2 (2023-01-22)
-* (xXBJXx) first release
 
 ## License
 MIT License
