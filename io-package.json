@@ -110,21 +110,24 @@
     },
     "authors": [
       "xXBJXx <issi.dev.iobroker@gmail.com>",
-      "iobroker-community-adapters <mcm57@gmx.at>"
+      "iobroker-community-adapters <iobroker-community-adapters@gmx.de>"
     ],
     "keywords": [
       "Elgato",
       "Light",
       "Elgato Key Light"
     ],
-    "license": "MIT",
+    "licenseInformation": {
+      "license": "MIT",
+      "type": "free"
+    },
     "platform": "Javascript/Node.js",
-    "main": "build/main.js",
     "icon": "elgato-key-light.png",
     "enabled": true,
     "extIcon": "https://raw.githubusercontent.com/iobroker-community-adapters/ioBroker.elgato-key-light/main/admin/elgato-key-light.png",
     "readme": "https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/blob/main/README.md",
     "loglevel": "info",
+    "tier": 2,
     "mode": "daemon",
     "type": "lighting",
     "compact": true,
@@ -159,19 +162,14 @@
     "eraseOnUpload": true,
     "dependencies": [
       {
-        "js-controller": ">=3.3.22"
+        "js-controller": ">=5.0.19"
       }
     ],
     "globalDependencies": [
       {
-        "admin": ">=5.0.0"
+        "admin": ">=6.13.16"
       }
     ]
-  },
-  "plugins": {
-    "sentry": {
-      "dsn": "https://d0446b6ad8a543b586c5597576a8a14e@o384969.ingest.sentry.io/4504545634746368"
-    }
   },
   "native": {
     "interval": 60
