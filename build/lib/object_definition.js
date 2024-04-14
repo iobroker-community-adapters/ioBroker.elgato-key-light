@@ -68,6 +68,7 @@ const stateAttrb = {
     write: false,
     unit: "K",
     states: {
+      // von 2900 bis 7000 in 50er Schritten
       2900: "2900K",
       2950: "2950K",
       3e3: "3000K",
@@ -379,6 +380,7 @@ const stateAttrb = {
     read: true,
     write: true,
     states: {
+      // von 2900 bis 7000 in 50er Schritten
       2900: "2900K",
       2950: "2950K",
       3e3: "3000K",

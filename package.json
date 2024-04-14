@@ -1,6 +1,6 @@
 {
   "name": "iobroker.elgato-key-light",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "With the Elgato Key Light Adapter you can query and control Elgato lamps like Elgato Key Light / Elgato Key Light Air.",
   "author": {
     "name": "xXBJXx",

@@ -14,6 +14,10 @@ var __copyProps = (to, from, except, desc) => {
   return to;
 };
 var __toESM = (mod, isNodeMode, target) => (target = mod != null ? __create(__getProtoOf(mod)) : {}, __copyProps(
+  // If the importer is in node compatibility mode or this is not an ESM
+  // file that has been converted to a CommonJS file using a Babel-
+  // compatible transform (i.e. "__esModule" has not been set), then set
+  // "default" to the CommonJS "module.exports" for node compatibility.
   isNodeMode || !mod || !mod.__esModule ? __defProp(target, "default", { value: mod, enumerable: true }) : target,
   mod
 ));
@@ -41,6 +45,9 @@ class ElgatoKeyLight extends utils.Adapter {
     this.interval = 5e3;
     this.requestObject = [];
   }
+  /**
+   * Is called when databases are connected and adapter received configuration.
+   */
   async onReady() {
     this.messageHandler = [];
     this.devices = [];
@@ -324,6 +331,8 @@ class ElgatoKeyLight extends utils.Adapter {
         type: "device",
         common: {
           name: device.info.displayName || device.info.productName,
+          // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+          // @ts-ignore
           statusStates: {
             onlineId: `${this.namespace}.${deviceName}.reachable`
           }
@@ -865,6 +874,9 @@ class ElgatoKeyLight extends utils.Adapter {
       }
     }
   }
+  /**
+   * @description a function for log output
+   */
   writeLog(logText, logType) {
     if (logType === "warn" || logType === "error") {
       if (this.messageHandler.length > 0) {
@@ -986,6 +998,9 @@ class ElgatoKeyLight extends utils.Adapter {
       }
     }
   }
+  /**
+   * Is called if a subscribed state changes
+   */
   async onStateChange(id, state) {
     var _a;
     if (state && !state.ack) {
@@ -1308,6 +1323,9 @@ class ElgatoKeyLight extends utils.Adapter {
       }
     }
   }
+  /**
+   * Is called when adapter shuts down - callback has to be called under any circumstances!
+   */
   async onUnload(callback) {
     var _a;
     try {
