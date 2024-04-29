@@ -75,7 +75,7 @@
     "react-color": "^2.19.3",
     "react-dom": "^17.0.2",
     "react-error-boundary": "^3.1.4",
-    "rimraf": "^4.1.2",
+    "rimraf": "^5.0.5",
     "sinon": "^17.0.1",
     "sinon-chai": "^3.7.0",
     "tiny-glob": "^0.2.9",
