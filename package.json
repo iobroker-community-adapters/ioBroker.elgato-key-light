@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "@iobroker/adapter-core": "^3.1.4",
-    "axios": "^1.6.8",
+    "axios": "^1.13.6",
     "source-map-support": "^0.5.21"
   },
   "devDependencies": {
