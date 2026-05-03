@@ -114,6 +114,8 @@ The data points are divided into:
 * (xXBJXx) Dependency updates
 * (xXBJXx) feature request [#2](https://github.com/xXBJXx/ioBroker.elgato-key-light/issues/2) added
 
+[Older changelogs can be found there](CHANGELOG_OLD.md)
+
 ## License
 MIT License
 
