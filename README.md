@@ -213,8 +213,7 @@ npm run build
 Hardware tests are opt-in, GET-only by default and must not run in CI.
 
 ## Changelog
-
-### **WORK IN PROGRESS**
+### 2.0.0 (2026-08-16)
 
 - (xXBJXx) Reworked the backend with a validated HTTP client, capability detection, resilient polling and bounded Bonjour/mDNS discovery.
 - (xXBJXx) Added reliable controls for supported lights, including RGB, temperature, battery and studio mode, with strict instance isolation and clean device removal.
@@ -222,11 +221,6 @@ Hardware tests are opt-in, GET-only by default and must not run in CI.
 - (xXBJXx) Addressed repository checker findings for managed timers and repository metadata.
 - (xXBJXx) Requires Node.js >= 22.18, js-controller >= 7.2.2 and Admin >= 7.8.23.
 - (xXBJXx) Fixes issues [#116](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/issues/116), [#117](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/issues/117), [#130](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/issues/130), [#152](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/issues/152) and [#159](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/issues/159); supersedes PRs [#39](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/pull/39), [#129](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/pull/129), [#181](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/pull/181), [#185](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/pull/185), [#186](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/pull/186), [#209](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/pull/209) and [#250](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/pull/250).
-
-### 1.1.0 (2024-04-14)
-
-- (mcm1957) Adapter requires Node.js 18 and js-controller >= 5 now.
-- (mcm1957) Dependencies have been updated.
 
 Older entries: [CHANGELOG_OLD.md](CHANGELOG_OLD.md)
 
