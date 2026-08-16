@@ -3,6 +3,6 @@
   "numChangelogEntries": 1,
   "addPlaceholder": true,
   "exec": {
-    "before_commit": "npm run lint && npm run typecheck && npm test && npm run build"
+    "before_commit": "npm run lint && npm run typecheck && npm test && npm run test:integration && npm run build"
   }
 }

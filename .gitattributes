@@ -1,0 +1,8 @@
+/admin/**/*.css text eol=lf
+/admin/**/*.html text eol=lf
+/admin/**/*.js text eol=lf
+/build/**/*.d.ts text eol=lf
+/build/**/*.js text eol=lf
+/build/**/*.map text eol=lf
+/src-admin/index_m.html text eol=lf
+/src-tab/tab_m.html text eol=lf

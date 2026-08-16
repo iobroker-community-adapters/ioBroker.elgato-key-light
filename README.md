@@ -202,10 +202,11 @@ Serial-number device roots and the established writable paths below `<serial>.li
 ## Development
 
 ```shell
-npm ci
+npm run install:all
 npm run lint
 npm run typecheck
 npm test
+npm run test:integration
 npm run build
 ```
 

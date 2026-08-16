@@ -202,10 +202,11 @@ Die Geräte-Stammobjekte auf Seriennummernbasis und die bekannten schreibbaren P
 ## Entwicklung
 
 ```shell
-npm ci
+npm run install:all
 npm run lint
 npm run typecheck
 npm test
+npm run test:integration
 npm run build
 ```
 

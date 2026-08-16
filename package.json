@@ -25,10 +25,6 @@
   "engines": {
     "node": ">=22.18"
   },
-  "workspaces": [
-    "src-admin",
-    "src-tab"
-  ],
   "overrides": {
     "@alcalzone/esbuild-register": {
       "esbuild": "^0.25.0"
@@ -62,6 +58,7 @@
     "LICENSE"
   ],
   "scripts": {
+    "install:all": "npm ci && npm --prefix src-admin ci && npm --prefix src-tab ci",
     "clean": "node scripts/clean.mjs",
     "prebuild": "npm run clean",
     "build": "npm run build:ts && npm run build:admin && npm run build:tab",
