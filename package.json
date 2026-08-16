@@ -76,6 +76,7 @@
     "lint": "eslint -c eslint.config.mjs . && npm --prefix src-admin run lint && npm --prefix src-tab run lint",
     "elgato:probe": "npm run build:ts && node build/cli/probe.js",
     "translate": "translate-adapter",
+    "check:release": "npm run lint && npm run typecheck && npm test && npm run test:integration && npm run build",
     "release": "release-script"
   }
 }
