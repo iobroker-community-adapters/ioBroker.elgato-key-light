@@ -125,4 +125,60 @@ describe('DeviceManager', () => {
         assert.equal(manager.configurations()[0]?.host, '192.168.1.31');
         manager.stop();
     });
+
+    it('warns once per outage and logs repeat failures at debug level', async () => {
+        let offline = true;
+        const client: DeviceClient = {
+            snapshot: async () => (offline ? Promise.reject(new Error('offline')) : snapshot()),
+            setLights: async () => undefined,
+            setDisplayName: async () => undefined,
+            setSettings: async () => undefined,
+            identify: async () => undefined,
+        };
+        const warnings: string[] = [];
+        const debugs: string[] = [];
+        const manager = new DeviceManager(
+            { onSnapshot: () => undefined, onHealth: () => undefined, onConfigurationChanged: () => undefined },
+            {
+                debug: message => {
+                    debugs.push(message);
+                },
+                silly: () => undefined,
+                warn: message => {
+                    warnings.push(message);
+                },
+            },
+            {
+                pollIntervalMs: 60_000,
+                requestTimeoutMs: 500,
+                maxBackoffMs: 8_000,
+                writeDebounceMs: 5,
+                clientFactory: () => client,
+            },
+        );
+        const unavailable = (entries: string[]): number =>
+            entries.filter(entry => entry.includes('unavailable')).length;
+
+        try {
+            await manager.start([{ host: '192.168.1.32', port: 9123, source: 'manual', enabled: true }]);
+            const id = manager.views()[0]?.health.id;
+            assert.ok(id);
+            assert.equal(unavailable(warnings), 1);
+            assert.equal(unavailable(debugs), 0);
+
+            await manager.refresh(id).catch(() => undefined);
+            await manager.refresh(id).catch(() => undefined);
+            assert.equal(unavailable(warnings), 1);
+            assert.equal(unavailable(debugs), 2);
+
+            offline = false;
+            await manager.refresh(id);
+            offline = true;
+            await manager.refresh(id).catch(() => undefined);
+            assert.equal(unavailable(warnings), 2);
+            assert.equal(unavailable(debugs), 2);
+        } finally {
+            manager.stop();
+        }
+    });
 });
