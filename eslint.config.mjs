@@ -4,6 +4,8 @@ export default [
     {
         ignores: [
             '.dev-server/',
+            '.npm-cache/',
+            '.integration-temp/',
             '.git/',
             '.test-build/',
             '.vscode/',

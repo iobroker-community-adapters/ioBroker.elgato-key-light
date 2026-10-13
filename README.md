@@ -215,6 +215,8 @@ Hardware tests are opt-in, GET-only by default and must not run in CI.
 ## Changelog
 ### **WORK IN PROGRESS**
 
+- (hwiedermann) Log only one warning per device outage; repeated failures use debug logging (fixes #308, PR #309).
+- (xXBJXx) Updated dependencies and rebuilt the admin interfaces.
 - (xXBJXx) Updated locked Moment dependencies to 2.31.0 and added locale path-traversal regression tests (GHSA-4p3w-j4w9-5jqw).
 
 ### 2.0.0 (2026-08-16)
