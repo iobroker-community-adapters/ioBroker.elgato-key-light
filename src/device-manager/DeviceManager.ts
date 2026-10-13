@@ -218,7 +218,12 @@ export class DeviceManager {
                     nextPollAt: new Date(Date.now() + backoff).toISOString(),
                 };
                 await this.events.onHealth(runtime.health);
-                this.logger.warn(`[ElgatoDevice] ${runtime.health.id} unavailable: ${runtime.health.lastError}`);
+                const message = `[ElgatoDevice] ${runtime.health.id} unavailable: ${runtime.health.lastError}`;
+                if (failures === 1) {
+                    this.logger.warn(message);
+                } else {
+                    this.logger.debug(message);
+                }
                 throw error;
             }
         });
