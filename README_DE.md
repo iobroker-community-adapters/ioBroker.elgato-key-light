@@ -214,7 +214,7 @@ Hardwaretests sind optional, standardmäßig rein lesend und dürfen nicht in CI
 
 ## Änderungsverlauf
 
-### **WORK IN PROGRESS**
+### 2.0.1 (2026-10-13)
 
 - (hwiedermann) Nur eine Warnung pro Geräteausfall; weitere Fehler werden auf Debug-Ebene protokolliert (behebt #308, PR #309).
 - (xXBJXx) Abhängigkeiten aktualisiert und die Admin-Oberflächen neu gebaut.

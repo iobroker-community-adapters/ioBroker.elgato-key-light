@@ -1,6 +1,6 @@
 {
   "name": "iobroker.elgato-key-light",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Control Elgato Wi-Fi lighting locally from ioBroker.",
   "author": "xXBJXx <issi.dev.iobroker@gmail.com>",
   "contributors": [
