@@ -216,6 +216,8 @@ Hardwaretests sind optional, standardmäßig rein lesend und dürfen nicht in CI
 
 ### **WORK IN PROGRESS**
 
+- (xXBJXx) Moment in den Lockfiles auf 2.31.0 aktualisiert und Regressionstests gegen Locale-Pfadmanipulation ergänzt (GHSA-4p3w-j4w9-5jqw).
+
 - (xXBJXx) Backend mit validiertem HTTP-Client, Fähigkeitserkennung, robustem Polling und begrenzter Bonjour-/mDNS-Suche überarbeitet.
 - (xXBJXx) Zuverlässige Steuerung unterstützter Leuchten einschließlich RGB, Temperatur, Akku und Studio-Modus sowie strikte Instanztrennung und sauberes Löschen von Geräten ergänzt.
 - (xXBJXx) Konfiguration und Dashboard mit responsiven Geräte-Cards, Health-Daten, Diagnose und Geräte-/API-Details modernisiert.

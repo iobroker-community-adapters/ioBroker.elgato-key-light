@@ -215,6 +215,8 @@ Hardware tests are opt-in, GET-only by default and must not run in CI.
 ## Changelog
 ### **WORK IN PROGRESS**
 
+- (xXBJXx) Updated locked Moment dependencies to 2.31.0 and added locale path-traversal regression tests (GHSA-4p3w-j4w9-5jqw).
+
 ### 2.0.0 (2026-08-16)
 
 - (xXBJXx) Reworked the backend with a validated HTTP client, capability detection, resilient polling and bounded Bonjour/mDNS discovery.
