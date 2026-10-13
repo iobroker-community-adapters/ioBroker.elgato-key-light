@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "elgato-key-light",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "news": {
+      "2.0.1": {
+        "en": "Log only one warning per device outage; repeated failures use debug logging (fixes #308, PR #309).\nUpdated dependencies and rebuilt the admin interfaces.\nUpdated locked Moment dependencies to 2.31.0 and added locale path-traversal regression tests (GHSA-4p3w-j4w9-5jqw).",
+        "de": "Nur eine Warnung pro Geräteausfall; weitere Fehler werden auf Debug-Ebene protokolliert (behebt #308, PR #309).\nAbhängigkeiten aktualisiert und die Admin-Oberflächen neu gebaut.\nMoment in den Lockfiles auf 2.31.0 aktualisiert und Regressionstests gegen Locale-Pfadmanipulation ergänzt (GHSA-4p3w-j4w9-5jqw).",
+        "ru": "Записывайте только одно предупреждение за каждый сбой устройства; при повторных сбоях используется ведение журнала отладки (исправления #308, PR #309).\nОбновлены зависимости и перестроены интерфейсы администратора.\nОбновлены заблокированные зависимости Moment до версии 2.31.0 и добавлены регрессионные тесты для обхода локальных путей (GHSA-4p3w-j4w9-5jqw).",
+        "pt": "Registre apenas um aviso por falha; falhas repetidas usam debug logging (fixes #308, PR #309).\nAtualizei dependências e reconstruí as interfaces.\nAtualizou as dependências do Moment bloqueado para 2.31.0 e adicionou testes de regressão local (GHSA-4p3w-j4w9-5jqw).",
+        "nl": "Registreer slechts één waarschuwing per uitval van het apparaat; bij herhaalde storingen wordt gebruik gemaakt van foutopsporingsregistratie (oplossingen #308, PR #309).\nDe afhankelijkheden zijn bijgewerkt en de beheerdersinterfaces opnieuw opgebouwd.\nDe afhankelijkheden van vergrendelde momenten zijn bijgewerkt naar 2.31.0 en de regressietests voor het doorlopen van lokale paden toegevoegd (GHSA-4p3w-j4w9-5jqw).",
+        "fr": "N'enregistre qu'un seul avertissement par panne ; les échecs répétés utilisent le debug (fixes #308, PR #309).\nDépendances mises à jour et interface d'administration remaniée.\nMise à jour de Locked Moment Dependencies vers 2.31.0 et ajout de tests de régression locale (GHSA-4p3w-j4w9-5jqw).",
+        "it": "Registra solo un avviso per guasto; errori ripetuti usa il debug (fix #308, PR #309).\nDipendenze aggiornate e nuove interfacce admin.\nAggiornate le dipendenze bloccate di Moment alla 2.31.0 e aggiunti i test di regressione locale (GHSA-4p3w-j4w9-5jqw).",
+        "es": "Registre solo un aviso por corte del dispositivo; los errores repetidos usan el registro de depuración (fix #308, PR #309).\nActualizó las dependencias y reconstruyó las interfaces de administración.\nSe han actualizado las dependencias bloqueadas de Moment a 2.31.0 y se han añadido pruebas de regresión regional (GHSA-4p3w-j4w9-5jqw).",
+        "pl": "Rejestruj tylko jedno ostrzeżenie na awarię urządzenia; powtarzające się awarie używają rejestrowania debugowania (poprawki #308, PR #309).\nZaktualizowano zależności i przebudowano interfejsy administratora.\nZaktualizowano zablokowane zależności Moment do 2.31.0 i dodano testy regresji locale ścieżki (GHSA-4p3w-j4w9-5jqw).",
+        "uk": "Зареєструйте лише одне попередження на відключення пристрою; повторні збої використовують журналювання налагодження (виправлення #308, PR #309).\nОновлено залежності та перебудовано інтерфейси адміністратора.\nОновлено заблоковані залежності від моменту до 2.31.0 та додано локальні тести регресії траверсної траєкторії (GHSA-4p3w-j4w9-5jqw).",
+        "zh-cn": "每次设备中断仅记录一次警告；重复失败使用调试日志（修复 #308、PR #309）。\n更新了依赖关系并重建了管理界面。\n将锁定的 Moment 依赖项更新到 2.31.0，并添加了语言环境路径遍历回归测试 (GHSA-4p3w-j4w9-5jqw)。"
+      },
       "2.0.0": {
         "en": "Reworked the backend with a validated HTTP client, capability detection, resilient polling and bounded Bonjour/mDNS discovery.\nAdded reliable controls for supported lights, including RGB, temperature, battery and studio mode, with strict instance isolation and clean device removal.\nModernized the configuration and dashboard UIs with responsive device cards, health data, diagnostics and device/API details.\nAddressed repository checker findings for managed timers and repository metadata.\nRequires Node.js >= 22.18, js-controller >= 7.2.2 and Admin >= 7.8.23.\nFixes issues [#116](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/issues/116), [#117](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/issues/117), [#130](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/issues/130), [#152](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/issues/152) and [#159](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/issues/159); supersedes PRs [#39](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/pull/39), [#129](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/pull/129), [#181](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/pull/181), [#185](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/pull/185), [#186](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/pull/186), [#209](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/pull/209) and [#250](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/pull/250).",
         "de": "Das Backend wurde überarbeitet und umfasst nun einen validierten HTTP-Client, Fähigkeitserkennung, robustes Polling und begrenzte Bonjour/mDNS-Erkennung.\nZuverlässige Steuerungsmöglichkeiten für unterstützte Leuchten wurden hinzugefügt, darunter RGB, Temperatur, Akku und Studiomodus, mit strikter Instanzisolierung und sauberer Geräteentfernung.\nDie Konfigurations- und Dashboard-Benutzeroberflächen wurden modernisiert und umfassen nun responsive Gerätekarten, Gesundheitsdaten, Diagnosefunktionen sowie Geräte-/API-Details.\nDie Ergebnisse der Repository-Prüfung für verwaltete Timer und Repository-Metadaten wurden behoben.\nErfordert Node.js >= 22.18, js-controller >= 7.2.2 und Admin >= 7.8.23.\nBehebt die Probleme [#116](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/issues/116), [#117](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/issues/117), [#130](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/issues/130), [#152](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/issues/152) und [#159](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/issues/159); Ersetzt die Pull Requests [#39](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/pull/39), [#129](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/pull/129), [#181](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/pull/181), [#185](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/pull/185) und [#186](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/pull/186). [#209](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/pull/209) und [#250](https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/pull/250).",
@@ -80,19 +93,6 @@
         "pl": "usunięto wyszukiwanie Bonjour, ponieważ nie działało poprawnie\nDodawanie funkcji usuwania dla urządzeń\nAktualizacje zależności\nżądanie funkcji #2 dodane",
         "uk": "видалено пошук Bonjour, оскільки він не працював правильно\nДодавання функції видалення для пристроїв\nОновлення залежностей\nзапит функції #2 додано",
         "zh-cn": "删除了Bonjour搜索，因为它无法正常工作\n添加用于设备的删除功能\n依赖项更新\n功能请求#2已添加"
-      },
-      "0.0.3": {
-        "en": "changed all images to png",
-        "de": "alle Bilder in png geändert",
-        "ru": "изменил все изображения на png",
-        "pt": "mudou todas as imagens para png",
-        "nl": "alle afbeeldingen veranderd in png",
-        "fr": "changé toutes les images en png",
-        "it": "modificato tutte le immagini in png",
-        "es": "cambiado todas las imágenes a png",
-        "pl": "zmienił wszystkie obrazy na png",
-        "uk": "змінили всі зображення на png",
-        "zh-cn": "将所有图片改为png"
       }
     },
     "titleLang": {
