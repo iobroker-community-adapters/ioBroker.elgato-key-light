@@ -215,6 +215,9 @@ Hardware tests are opt-in, GET-only by default and must not run in CI.
 ## Changelog
 ### **WORK IN PROGRESS**
 
+- (hwiedermann) Warn only once per device outage; log repeated failures at debug level (#308, #309).
+- (xXBJXx) Integrate reviewed UI dependency updates and align React/React DOM in both interfaces (#289, #291, #300, #304, #312, #317, #318, #322).
+
 ### 2.0.0 (2026-08-16)
 
 - (xXBJXx) Reworked the backend with a validated HTTP client, capability detection, resilient polling and bounded Bonjour/mDNS discovery.

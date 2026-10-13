@@ -216,6 +216,9 @@ Hardwaretests sind optional, standardmäßig rein lesend und dürfen nicht in CI
 
 ### **WORK IN PROGRESS**
 
+- (hwiedermann) Pro Geräteausfall nur einmal warnen; weitere Fehlschläge auf Debug-Stufe protokollieren (#308, #309).
+- (xXBJXx) Geprüfte UI-Abhängigkeiten übernommen und React/React DOM in beiden Oberflächen angeglichen (#289, #291, #300, #304, #312, #317, #318, #322).
+
 - (xXBJXx) Backend mit validiertem HTTP-Client, Fähigkeitserkennung, robustem Polling und begrenzter Bonjour-/mDNS-Suche überarbeitet.
 - (xXBJXx) Zuverlässige Steuerung unterstützter Leuchten einschließlich RGB, Temperatur, Akku und Studio-Modus sowie strikte Instanztrennung und sauberes Löschen von Geräten ergänzt.
 - (xXBJXx) Konfiguration und Dashboard mit responsiven Geräte-Cards, Health-Daten, Diagnose und Geräte-/API-Details modernisiert.
