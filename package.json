@@ -23,7 +23,7 @@
     "url": "https://github.com/iobroker-community-adapters/ioBroker.elgato-key-light/issues"
   },
   "engines": {
-    "node": ">=22.18"
+    "node": ">=22.19.0"
   },
   "overrides": {
     "@alcalzone/esbuild-register": {
